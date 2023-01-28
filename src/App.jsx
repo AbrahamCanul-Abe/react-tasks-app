@@ -1,5 +1,11 @@
+import TaskList from './TaskList';
+
 function HolaMundo() {
-	return <div>HolaMundo</div>;
+	return (
+		<div>
+			<TaskList />
+		</div>
+	);
 }
 
 export default HolaMundo;
