@@ -14,4 +14,9 @@ export const tasks = [
 		title: 'Mi tercer tarea',
 		description: 'Mi tercer tarea',
 	},
+	{
+		id: 3,
+		title: 'Mi cuarta tarea',
+		description: 'Mi cuarta tarea',
+	},
 ];

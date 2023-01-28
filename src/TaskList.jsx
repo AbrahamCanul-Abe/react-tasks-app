@@ -1,13 +1,4 @@
-import { tasks as data } from './tasks';
-import { useState, useEffect } from 'react';
-
-function TaskList() {
-	const [tasks, setTasks] = useState(data);
-
-	/* useEffect(() => {
-		setTasks(data);
-	}, []); */
-
+function TaskList({ tasks }) {
 	if (tasks.length === 0) {
 		return <h1>No hay tareas aun</h1>;
 	}
@@ -18,6 +9,7 @@ function TaskList() {
 				<div key={task.id}>
 					<h1>{task.title}</h1>
 					<p>{task.description}</p>
+					<button>Hacer tarea {task.id}</button>
 				</div>
 			))}
 		</div>
